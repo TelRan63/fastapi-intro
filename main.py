@@ -23,6 +23,8 @@ def get_task(task_id: int):
 def get_tasks(skip: int = 0, limit: int = 10):
     return tasks_db[skip:skip+limit]
 
+# TODO Homework: add delete and update task by id functionalities
+
 
 @app.get("/health")
 async def health():
